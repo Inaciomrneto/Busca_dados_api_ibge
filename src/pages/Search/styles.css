@@ -31,7 +31,7 @@
 
 /* Titulo */
 h1{
-  font-size: 3em;
+  font-size: 2.5em;
   padding-bottom: 30px;
   font-weight: 800;
 }
@@ -46,13 +46,13 @@ h1{
 }
 
 .InputSelect label{
-  font-size: 2.0em;
+  font-size: 1.5em;
   padding-bottom: 10px;
   font-weight: 600;
 }
 
 .InputSelect select{
-  font-size: 1.5em;
+  font-size: 1.2em;
   padding: 10px;
   border-radius: 9px;
   background-color: var(--color-white);
@@ -79,41 +79,19 @@ h1{
 }
 
 .resultados-item h3{
-  font-size: 1.8em;
+  font-size: 1.5em;
   color: var(--color-black);
   padding-bottom: 15px;
 }
 
 .resultados-item p{
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 /* Media Queries  */
 @media (max-width: 500px){
-  /* Titulo */
-  h1{
-    font-size: 2em;
-  }
-
-  /* Select */
-  .InputSelect label{
-    font-size: 1.5em;
-  }
-  .InputSelect select{
-    font-size: 1.2em;
-  }
-
-  /* Sesão Resultados */
-    
   .resultados{
     grid-template-columns: 1fr;
     grid-gap: 20px;
   }
-  .resultados-item h3{
-    font-size: 1.5em;
-  }
-  .resultados-item p{
-    font-size: 1em;
-  }
-
 }
