@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap');
+
+/* Reset */
+* {
+  padding:0;
+  margin:0;
+  vertical-align:baseline;
+  list-style:none;
+  border:0;
+  }
+
+/* Variáveis */
+:root {
+  --color-black: #515152;
+  --color-gray: #6e7074;
+  --color-white: #e1e1e1;
+}
+
+/* Seção Container */
+.container{
+  height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--color-white);
+  color: var(--color-black);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 0 30px;
+}
+
+/* Titulo */
+h1{
+  font-size: 3em;
+  padding-bottom: 30px;
+  font-weight: 800;
+}
+
+/* Select */
+.InputSelect{
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.InputSelect label{
+  font-size: 2.0em;
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+
+.InputSelect select{
+  font-size: 1.5em;
+  padding: 10px;
+  border-radius: 9px;
+  background-color: var(--color-white);
+  border: 2px solid var(--color-gray);
+}
+
+/* Sesão Resultados */
+.resultados{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 30px;
+  display: grid;  
+  grid-template-columns: 1fr 1fr;
+	grid-gap: 10px;
+}
+
+.resultados-item{
+  border: 2px solid var(--color-black);
+  padding: 10px;
+  border-radius: 9px;
+  -webkit-box-shadow: 7px 8px 6px -4px rgba(0,0,0,0.21);
+  -moz-box-shadow: 7px 8px 6px -4px rgba(0,0,0,0.21);
+  box-shadow: 7px 8px 6px -4px rgba(0,0,0,0.21);
+}
+
+.resultados-item h3{
+  font-size: 1.8em;
+  color: var(--color-black);
+  padding-bottom: 15px;
+}
+
+.resultados-item p{
+  font-size: 1.5em;
+}
+
+/* Media Queries  */
+@media (max-width: 500px){
+  /* Titulo */
+  h1{
+    font-size: 2em;
+  }
+
+  /* Select */
+  .InputSelect label{
+    font-size: 1.5em;
+  }
+  .InputSelect select{
+    font-size: 1.2em;
+  }
+
+  /* Sesão Resultados */
+    
+  .resultados{
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  .resultados-item h3{
+    font-size: 1.5em;
+  }
+  .resultados-item p{
+    font-size: 1em;
+  }
+
+}
